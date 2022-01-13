@@ -1,0 +1,110 @@
+﻿/*main styles*/
+body {
+    margin: 0px;
+    background-color: black;
+    overflow-x: hidden;
+    color: white;
+}
+
+/*nav styles*/
+.nav-wrapper {
+    display:flex;
+    justify-content: space-between;
+    padding:38px;
+    background-color: black;
+}
+
+.left-side {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size:0.9em;
+}
+.right-side{
+
+}
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+    color: #ffffff;
+    text-decoration:none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapperhover{
+    border-bottom: 1px solid darkgrey;
+}
+
+.nav-link-wrapper a:hover{
+    color: darkgrey;
+}
+
+/*section styles*/
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.blue {
+    background-color: blue;    
+}
+
+.orange {
+    background-color: darkorange;
+}
+
+.red {
+    background-color: red;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}
+
+.curve {
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: black;
+    transform: translate(85%, 60%);
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: blue;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+    
+}
