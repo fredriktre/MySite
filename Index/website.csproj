@@ -107,7 +107,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Folder Include="Images\SVG\" />
     <Folder Include="Videos\" />
   </ItemGroup>
   <PropertyGroup>
